@@ -24,3 +24,5 @@ cabal.project.local~
 .stack-work/
 stack*.yaml.lock
 *~
+node_modules
+package-lock.json

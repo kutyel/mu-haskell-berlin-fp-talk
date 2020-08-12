@@ -1,0 +1,34 @@
+{
+  "name": "mu-haskell-berlin-fp-talk",
+  "version": "1.0.0",
+  "description": "Code example and slides for my talk in the Berlin Functional Programming Group",
+  "main": "deck.mdx",
+  "scripts": {
+    "start": "mdx-deck deck.mdx",
+    "build": "mdx-deck build deck.mdx --no-html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kutyel/mu-haskell-berlin-fp-talk.git"
+  },
+  "keywords": [
+    "haskell",
+    "graphql",
+    "mu-haskell",
+    "mu-graphql"
+  ],
+  "author": "Flavio Corpa <flavio.corpa@47deg.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kutyel/mu-haskell-berlin-fp-talk/issues"
+  },
+  "homepage": "https://github.com/kutyel/mu-haskell-berlin-fp-talk#readme",
+  "devDependencies": {
+    "@emotion/core": "^10.0.17",
+    "@emotion/styled": "^10.0.17",
+    "file-loader": "^2.0.0",
+    "mdx-deck": "^1.7.7",
+    "mdx-deck-code-surfer": "^0.5.5",
+    "prismjs": "^1.21.0"
+  }
+}
