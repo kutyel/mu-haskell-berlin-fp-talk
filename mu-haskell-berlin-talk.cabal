@@ -1,0 +1,28 @@
+name:               mu-haskell-berlin-talk
+version:            0.1.0.0
+synopsis:           An example library app with mu-graphql
+description:
+  Code example and slides for my talk in the Berlin Functional Programming Group
+
+homepage:           https://github.com/kutyel/mu-haskell-berlin-talk#readme
+author:             Flavio Corpa
+maintainer:         flavio.corpa@47deg.com
+copyright:          Copyright © 2020 47 Degrees. &lt;http://47deg.com&gt;
+category:           Web
+build-type:         Simple
+cabal-version:      >=1.10
+extra-source-files: README.md
+
+executable library
+  hs-source-dirs:   src
+  main-is:          Main.hs
+  default-language: Haskell2010
+  build-depends:
+      base        >=4.12  && <5
+    , conduit
+    , mu-graphql  >=0.3.0
+    , mu-rpc      >=0.3.0
+    , mu-schema   >=0.3.0
+    , text
+    , wai-extra
+    , warp

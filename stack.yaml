@@ -1,0 +1,8 @@
+resolver: lts-15.8
+allow-newer: true
+extra-deps:
+- mu-schema-0.3.0.0
+- mu-rpc-0.3.0.0
+- mu-graphql-0.3.0.0
+- git: https://github.com/hasura/graphql-parser-hs.git
+  commit: 1380495a7b3269b70a7ab3081d745a5f54171a9c
