@@ -1,22 +1,24 @@
-import { CodeSurfer, CodeSurferColumns, Step } from 'code-surfer'
-import { nightOwl } from '@code-surfer/themes'
 import { Image } from 'mdx-deck'
+import Footer from 'mdx-deck-footer'
+import { CodeSurfer } from 'code-surfer'
+import { nightOwl } from '@code-surfer/themes'
 import 'prismjs/components/prism-haskell'
 
-import Layout from './Layout'
 import mu from './mu-graphql.jpg'
 
 export const theme = nightOwl
+const conf = 'Berlin Functional Programming Group 🇩🇪'
+const speaker = '@FlavioCorpa'
 
 <Image src={mu} />
 
 ---
 
-<Layout>
+<Footer conf={conf} speaker={speaker}>
 
 # mu-haskell + GraphQL = 💜
 
-</Layout>
+</Footer>
 
 ---
 
@@ -526,26 +528,26 @@ server =
 
 ---
 
-<Layout>
+<Footer conf={conf} speaker={speaker}>
 
 > Demo time!? ⏱
 
-</Layout>
+</Footer>
 
 ---
 
-<Layout>
+<Footer conf={conf} speaker={speaker}>
 
 ### Check it out!
 
 > https://github.com/higherkindness/mu-haskell
 
-</Layout>
+</Footer>
 
 ---
 
-<Layout>
+<Footer conf={conf} speaker={speaker}>
 
 # Thanks! λ 😸
 
-</Layout>
+</Footer>
