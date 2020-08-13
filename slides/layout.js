@@ -1,5 +1,6 @@
-import React, { Fragment } from "react";
-import styled from "@emotion/styled";
+/* eslint-disable jsx-a11y/accessible-emoji */
+import React, { Fragment } from 'react'
+import styled from '@emotion/styled'
 
 const Wrapper = styled.main`
   align-items: center;
@@ -9,7 +10,7 @@ const Wrapper = styled.main`
   justify-content: center;
   position: relative;
   width: 100vw;
-  & > div[class*="Split"] {
+  & > div[class*='Split'] {
     height: 90vh;
   }
   & h1 {
@@ -18,7 +19,7 @@ const Wrapper = styled.main`
   & > div > div:first-child {
     height: 90vh !important;
   }
-`;
+`
 
 const Footer = styled.footer`
   border-top: 1px solid #dc5f53;
@@ -29,7 +30,7 @@ const Footer = styled.footer`
   padding: 30px 100px;
   text-align: right;
   width: 100vw;
-`;
+`
 
 const Layout = ({ children }) => (
   <Fragment>
@@ -39,6 +40,6 @@ const Layout = ({ children }) => (
       <span>@FlavioCorpa</span>
     </Footer>
   </Fragment>
-);
+)
 
-export default Layout;
+export default Layout
