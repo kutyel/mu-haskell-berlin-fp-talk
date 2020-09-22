@@ -1,15 +1,23 @@
 import { Image } from 'mdx-deck'
 import Footer from 'mdx-deck-footer'
-import { lensPath, set } from 'ramda'
 import { CodeSurfer } from 'code-surfer'
 import { nightOwl } from '@code-surfer/themes'
 import 'prismjs/components/prism-haskell'
 import mu from './mu-graphql.jpg'
 
-export const theme = set(
-  lensPath(['styles', 'CodeSurfer', 'code', 'fontFamily']),
-  '"Dank Mono", "Fira Code", Consolas, "Roboto Mono", monospace'
-)(nightOwl)
+export const theme = {
+  ...nightOwl,
+  styles: {
+    ...nightOwl.styles,
+    CodeSurfer: {
+      ...nightOwl.styles.CodeSurfer,
+      code: {
+        ...nightOwl.styles.CodeSurfer.code,
+        fontFamily: 'Dank Mono',
+      },
+    },
+  },
+}
 const conf = 'Berlin Functional Programming Group 🇩🇪'
 const speaker = '@FlavioCorpa'
 
@@ -19,13 +27,16 @@ const speaker = '@FlavioCorpa'
 
 <Footer conf={conf} speaker={speaker}>
 
+
 # mu-haskell + GraphQL = 💜
 
 </Footer>
 
+
 ---
 
 <CodeSurfer>
+
 
 ```graphql file=../schema.graphql title="This is our source of truth 🧼"
 
@@ -33,9 +44,11 @@ const speaker = '@FlavioCorpa'
 
 </CodeSurfer>
 
+
 ---
 
 <CodeSurfer>
+
 
 ```haskell file=../src/Main.hs title="Our first GraphQL Server! 🚀"
 
@@ -529,17 +542,21 @@ server =
 
 </CodeSurfer>
 
+
 ---
 
 <Footer conf={conf} speaker={speaker}>
+
 
 > Demo time!? ⏱
 
 </Footer>
 
+
 ---
 
 <Footer conf={conf} speaker={speaker}>
+
 
 ### Check it out!
 
@@ -547,10 +564,13 @@ server =
 
 </Footer>
 
+
 ---
 
 <Footer conf={conf} speaker={speaker}>
 
+
 # Thanks! λ 😸
 
 </Footer>
+
