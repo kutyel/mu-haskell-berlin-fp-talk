@@ -9,6 +9,7 @@
   "devDependencies": {
     "code-surfer": "^3.1.0",
     "mdx-deck": "^3.0.13",
-    "mdx-deck-footer": "^1.2.0"
+    "mdx-deck-footer": "^1.2.0",
+    "optics.js": "^1.4.1"
   }
 }

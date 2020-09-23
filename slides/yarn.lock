@@ -8290,6 +8290,11 @@ opn@^5.4.0, opn@^5.5.0:
   dependencies:
     is-wsl "^1.1.0"
 
+optics.js@^1.4.1:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/optics.js/-/optics.js-1.4.1.tgz#072a7774fde03949ae8a6cbea82847bb9f52e4cc"
+  integrity sha512-tDrNtmUdq0s0hBjXRxHqjCPt7EfuwY1YVKtTju+9SPKQDYSNDDfRLhU7atKHxqLeOrH/Wyi/ew4h0vSQegNNsQ==
+
 optimize-css-assets-webpack-plugin@^5.0.3:
   version "5.0.3"
   resolved "https://registry.yarnpkg.com/optimize-css-assets-webpack-plugin/-/optimize-css-assets-webpack-plugin-5.0.3.tgz#e2f1d4d94ad8c0af8967ebd7cf138dcb1ef14572"
