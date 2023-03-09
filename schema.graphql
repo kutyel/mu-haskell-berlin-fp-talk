@@ -1,16 +1,36 @@
-# schema.graphql
-
 type Book {
+  id: Int!
+  title: String!
+  author: Author!
+  info: JSON
+}
+
+type Article {
+  id: Int!
   title: String!
   author: Author!
 }
 
+union Writing = Book | Article
+
 type Author {
+  id: Int!
   name: String!
-  books: [Book!]!
+  writings: [Writing!]!
 }
 
 type Query {
+  author(name: String! = ".*"): Author
+  book(title: String! = ".*"): Book
   authors: [Author!]!
   books: [Book!]!
+}
+
+type Subscription {
+  books: Book!
+}
+
+schema {
+  query: Query
+  subscription: Subscription
 }
